@@ -31,7 +31,7 @@ struct PhanSo {
 
     // Nhập vào 2 số nguyên a và b và trả về bội chung nhỏ nhất của 2 số (sử dụng thuật toán Euclid)
     int BCNN(int a,int b) {
-        return a * b / (gcd(a,b));
+        return (abs(a) / gcd(abs(a), abs(b))) * abs(b);
     }
 
     // Nhập dữ liệu tử số và mẫu số, gán giá trị cho biến 'tu' va 'mau', tự động kiểm tra tính hợp lệ (nếu không hợp lệ sẽ bắt nhập lại) và rút gọn phân số sau khi người dùng đã nhập một phân số hợp lệ
