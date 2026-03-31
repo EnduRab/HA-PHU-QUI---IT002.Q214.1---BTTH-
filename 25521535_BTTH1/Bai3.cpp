@@ -115,7 +115,7 @@ struct PhanSo {
     // Nạp chồng toán tử chia: Thực hiện nhân nghịch đảo. Kiểm tra lỗi nếu chia cho phân số bằng 0
     PhanSo operator/(PhanSo other) {
         // Nếu tử số của phân số chia bằng 0 (tức là giá trị bằng 0), đánh dấu kết quả không hợp lệ
-        if(tu == 0 || other.tu == 0) {
+        if(other.tu == 0) {
             PhanSo error;
             error.hople = false;
             return error;
